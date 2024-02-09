@@ -10,6 +10,11 @@ namespace ExtensionMethods
 	{
 		static void Main(string[] args)
 		{
+			PersonModel person = new PersonModel("Tim", "Corey");
+
+			_ = person.SetDefaultAge().PrintInfo();
+
+			_ = Console.ReadLine();
 		}
 	}
 }
